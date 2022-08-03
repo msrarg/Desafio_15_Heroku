@@ -1,7 +1,8 @@
 const fs = require('fs')
-const { faker } = require('@faker-js/faker');
+// const { faker } = require('@faker-js/faker');
 const fetch = require('node-fetch');
 
+/*
 faker.locale = 'es';
 const productosGetTest = (req, res) => {
     const output = [];
@@ -16,6 +17,7 @@ const productosGetTest = (req, res) => {
 
     res.status(200).json(output);
 }
+*/
 
 const productosGetTestView = async (req, res) => {
     fetch('http://localhost:8080/api/productos-test')
@@ -27,6 +29,6 @@ const productosGetTestView = async (req, res) => {
 
 module.exports = {
     productosGetTestView,
-    productosGetTest,
+    // productosGetTest,
 }
 
